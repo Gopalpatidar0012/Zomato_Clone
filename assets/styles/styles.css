@@ -1,0 +1,296 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Metropolis;
+    border: none;
+}
+
+/*this is remove outline and focus of input box  */
+
+*:focus{            
+    outline: none;
+    border: none;
+}
+
+a{
+    color: unset;
+}
+
+header{
+    background-image: url("../images/hero.png");
+    background-position: center;
+    background-size: cover;
+    height: 60vh;
+}
+/* Header Styles */
+
+
+
+/* Nav Styles */
+
+nav{
+  display: flex;     /* parent element hai */
+ justify-content: space-between;
+ align-items: center;
+ flex-direction: row;
+ padding: 25px 0px; 
+ width: 90%;
+ margin: 0px auto; 
+ }
+
+nav .nav-item{
+    color: rgb(247, 239, 239);
+    margin: 0px 10px;
+}
+
+nav div.container{
+    display: flex;
+   
+}
+
+nav div.nav-item.app {
+    font-size: 0.9rem;
+    font-weight: 900;
+    
+}
+nav div.nav-item{
+    font-size: 1.2rem;
+    font-weight: 200;
+}
+
+
+/* div inside of header (ZOMATO) */
+
+header div.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;  /* space equal divided */
+    width: 80%;
+    height: 70%;
+    margin: 0px auto;
+}
+
+header img.logo{
+    width: 300px;
+}
+header h1{
+    font-size: 2.5rem;
+    color:#fff;
+    font-weight: 400px;
+}
+
+header div.search-box{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ background-color: white;
+ width: 70%;
+ border-radius: 10px;
+}
+
+div.search-box div{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    margin: 0px 50px;
+}
+
+
+header div.search-box div.select i{
+color: tomato;
+}
+
+header div.search-box div.input i{
+    color: #828282b7;
+}
+
+header div.search-box div.seprator{
+    height: 50%;
+    background-color: #828282b7;
+    width: 2px;
+}
+
+ header div.search-box div.input{
+     flex-grow: 80;
+   
+ }
+ header div.search-box div.input input{
+     width: 100%;
+     font-size: 1rem;
+ }
+
+ header div.search-box i{
+     margin: 10px;
+ }
+
+/* header section completed------------------- */
+
+
+/* Nearby places Section */
+
+section.nearby{
+    min-height: 40vh;
+   
+
+}
+
+section.nearby div.container{
+    margin: 0px auto;
+    width: 90%;
+    padding: 40px 0px;
+   
+    text-align: center;
+}
+
+section.nearby div.container h3{
+    font-size: 2.2rem;
+    font-weight: unset;
+}
+
+section.nearby div.box{
+    max-width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 25px 15px;
+   font-size: 1.2rem;
+   border-radius: 10px;
+   margin-top: 5%;
+}
+
+section.nearby div.box:hover{
+ 
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    cursor:pointer ;
+}
+
+
+
+/* App Section */
+
+section.app{
+    background-color:#f8edf3;
+    min-height: 300px;
+}
+
+section.app div.containers{
+    width: 70%;
+    margin:0px auto;
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+}
+section.app div.containers img{
+   max-width: 300px;
+   display: block;
+}
+
+
+section.app div.containers div.form h1{
+   font-size: 2rem;
+}
+section.app div.containers div.form small{
+    display: block;
+    font-size: 1.1rem;
+    font-weight: 100;
+    color: #393737;
+    margin:20px 0px;
+}
+
+
+/* radio button styles */
+
+
+/* section.app div.containers div.form div.radio{
+                
+} */
+
+
+section.app div.input{
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    display: flex;
+   
+}
+
+section.app div.input input{
+    flex-grow: 70;
+    background-color: white;
+    border:1px solid #cfcfcf;
+    font-size: 1.2rem;
+    height: 100%; 
+    border-radius: 5px;
+    padding-left: 10px;
+    margin:0px 10px 0px 0px;
+}
+
+section.app div.input button{
+    height: 100%;
+    font-size: 1.1rem;
+    padding:10px;
+    font-weight: 100;
+    background-color: #ED5A68;
+    border-radius: 5px;
+}
+
+section.app div.form div.download{
+    margin: 20px 0px;
+    font-weight: 100;
+    color: grey;
+}
+
+section.app div.form div.download div img{
+    max-width: 150px;
+    display: inline-block;
+    margin: 5px 5px;
+}
+
+
+/* Section Options */
+
+section.options{
+
+    min-height: 60vh;
+}
+
+section.options div.container{
+    width: 90%;
+    margin: 30px auto;
+   
+}
+
+section.options div.container h2{
+    font-size: 2rem;
+    margin-left: 40px;
+
+}
+section.options div.container h3{
+    font-size: 1.6rem;
+    
+}
+section.options div.container div{
+    
+    margin: 40px;
+   
+}
+section.options div.container div ul{
+    padding: 20px;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap; /*this is wrap the space */
+  
+    
+}
+section.options div.container div ul li{
+   
+    margin:3px 10px ;
+    color: grey;
+    font-size: 1.1rem;
+    font-weight: 100;
+}
